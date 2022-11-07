@@ -1,22 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reponvive</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/38bc39f5d7.js" crossorigin="anonymous"></script>
-    <style>
-        body{
-            font-family:  Arial, Helvetica, sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reponvive</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/38bc39f5d7.js" crossorigin="anonymous"></script>
+  <style>
+    header {
+      background-color: rgb(0, 0, 0);
+      color: #ccc;
+    }
+
+    .main {
+      margin-top: 75px;
+      text-align: center;
+      
+    }
+
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 2px solid rgb(16, 92, 4);
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      display: table;
+      clear: both;
+    }
+  </style>
+
+  </style>
 </head>
+
 <body>
   <header>
-    <h1><i class="fa-solid fa-camera-retro"></i>Album</h1>
+    <h1><i class="fa-solid fa-camera-retro"></i>   Album</h1>
   </header>
+  <div class="main">
+    <h2>Địa điểm du lịch ở Phú Thọ</h2>
+    <p></p>
+
+  </div>
+
+
+
+  <div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/denhung.jpg">
+          <img src="images/denhung.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Đền Hùng</div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dentamgiang.jpg">
+          <img src="images/dentamgiang.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Đền Tam Giang - Chùa Đại Bi</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/damaochau.jpg">
+          <img src="images/damaochau.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Đầm Ao Châu Phú Thọ</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/denquocmau.jpg">
+          <img src="images/denquocmau.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Đền Mẫu Âu Cơ</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/vuonquocgiaxuanson.jpg">
+          <img src="images/vuonquocgiaxuanson.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Vườn Quốc gia Xuân Sơn</div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/doichelongcoc.jpg">
+          <img src="images/doichelongcoc.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Đồi chè Long Cốc</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/hothuonglong.jpg">
+          <img src="images/hothuonglong.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Hồ Ly - là hồ Thượng Long</div>
+      </div>
+    </div>
+
+  
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/khoangnong.jpg">
+          <img src="images/khoangnong.jpg" alt="" width="600" height="400">
+        </a>
+        <div class="desc">Khoáng nóng Thanh Thủy</div>
+      </div>
+    </div>
+
+
+
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+
+    </div>
+  </div>
+
+
+
 
 </body>
+
 </html>
