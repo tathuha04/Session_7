@@ -86,12 +86,6 @@ section {
   display: flex;
 }
 
-article {
-  width: 700px;
-  margin: 90px 0 0 180px;
-
-}
-
 .status {
   background-color: #fff;
   padding: 10px;
@@ -134,26 +128,23 @@ article {
 }
 
 .anh {
-  width: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .anh img {
   width: 320px;
   height: 200px;
+  padding: 8px;
 }
 
-.newfeed1 {
+.newfeed {
   text-indent: 20px;
   background-color: #fff;
   padding: 10px;
   margin-top: 15px;
-}
-
-.newfeed2 {
-  text-indent: 20px;
-  background-color: #fff;
-  margin-top: 10px;
-  padding: 10px;
 }
 
 .stt-2 {
@@ -178,20 +169,9 @@ article {
   margin: 10px 0;
 }
 
-.anh-2 {
-  display: flex;
-  margin: 15px;
-}
-
-.anh-2 img {
-  width: 325px;
-  height: 240px;
-  padding: 2px;
-}
-
-.nav-right{
+.nav-right {
   padding: 20px;
-  margin: 70px 0 0 ;
+  margin: 70px 0 0;
 }
 
 .friends {
@@ -225,4 +205,88 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.nav_left-mobile {
+  margin-top: 70px;
+  background-color: rgb(159, 159, 159);
+  padding: 12px;
+}
+.list_mobile {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.list_mobile li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* RWD */
+@media only screen and (max-width: 600px) {
+  .nav-left {
+    display: none;
+  }
+  article {
+    width: 90%;
+    margin: 120px auto;
+  }
+  .nav-right {
+    display: none;
+  }
+  .inp_search {
+    display: none;
+  }
+  .icon_head {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-left {
+    display: none;
+  }
+  article {
+    width: 90%;
+    margin: 120px auto;
+  }
+  .nav-right {
+    display: none;
+  }
+  .inp_search {
+    display: none;
+  }
+
+  .icon_head {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 920px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-left {
+    display: block;
+    width: 10%;
+  }
+  article {
+    width: 70%;
+    margin: 90px 0 0 180px;
+  }
+  .nav-right {
+    width: 20%;
+    display: block;
+  }
+  .nav_left-mobile {
+    display: none;
+  }
+  .icon_head {
+    display: block;
+  }
 }
